@@ -4,11 +4,7 @@ var a = [],
 $(document).ready(function() {
 
   var val = [];
-  //var firstVal = [];
-  //var secondVal = [];
-  //var myArray = [];
-  //output the value
-  //$("#result").html(sum);
+
   $("#1").click(function() {
     storeValue(1);
   });
@@ -42,8 +38,6 @@ $(document).ready(function() {
 
   //operation
   $("#add").click(function() {
-    //convert the array string to integer
-    //val1 = parseInt(val1.join(''), 10);
     val.push(parsedValue);
     val.push("+");
     clearValue();
@@ -51,24 +45,18 @@ $(document).ready(function() {
   });
 
   $("#subtract").click(function() {
-    //convert the array string to integer
-    //val1 = parseInt(val1.join(''), 10);
     val.push(parsedValue);
     val.push("-");
     clearValue();
     console.log(val);
   })
   $("#multiply").click(function() {
-    //convert the array string to integer
-    //val1 = parseInt(val1.join(''), 10);
     val.push(parsedValue);
     val.push("*");
     clearValue();
     console.log(val);
   })
   $("#divide").click(function() {
-    //convert the array string to integer
-    //val1 = parseInt(val1.join(''), 10);
     val.push(parsedValue);
     val.push("/");
     clearValue();
@@ -89,20 +77,36 @@ $(document).ready(function() {
     val = [];
     $("#result").text("0");
   });
-
-  //equals
 });
 
 function calculate(val) {
-  if (val[1] == "+") {
-    return val[0] + val[2];
-  } else if (val[1] == "-") {
-    return val[0] - val[2];
-  } else if (val[1] == "*") {
-    return val[0] * val[2];
-  } else if (val[1] == "/") {
-    return val[0] / val[2];
+
+  var calcValue;
+
+  //if (val[val.length - 1] === NaN) 
+  //  val.pop();
+  //
+
+  while (val.length != 1) {
+
+    if (val[1] == "+") {
+      calcValue = val[0] + val[2];
+    } else if (val[1] == "-") {
+      calcValue = val[0] - val[2];
+    } else if (val[1] == "*") {
+      calcValue = val[0] * val[2];
+    } else if (val[1] == "/") {
+      calcValue = val[0] / val[2];
+    }
+
+    val.shift();
+    val.shift();
+    val.unshift(calcValue);
+
   }
+
+  return calcValue;
+
 }
 
 function storeValue(number) {
