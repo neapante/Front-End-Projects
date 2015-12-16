@@ -1,0 +1,107 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+body, h1, a, p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+  background-color: #A6D95B;
+}
+
+#navbar_text {
+  color: #3D3D40;
+}
+
+.intro-header {
+    height: 855px;  
+     /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    /*text-align: center;*/
+    background: url('http://i.imgur.com/1KzpWaj.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 855px;
+}
+
+.bg-overlay {
+  background:rgba(255,255,255, .5);
+  height: 855px;
+}
+
+.introduction {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+#title {
+  font-size: 72px;
+}
+
+/*About*/
+
+.about-contents {
+    height: 855px;  
+     /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    /*text-align: center;*/
+    background: url('http://i.imgur.com/LLCI2kw.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 855px;
+}
+
+#description-role {
+  font-size: 24px;
+}
+
+
+/*Projects*/
+.project-contents {
+    height: 855px;  
+     /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    /*text-align: center;*/
+    background: url('http://i.imgur.com/kJSETjy.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 855px;
+}
+
+.project-padding {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/*Contacts*/
+.contacts-contents {
+    height: 855px;  
+     /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    /*text-align: center;*/
+    background: url('http://i.imgur.com/Gqs11qh.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.contacts-padding {
+    position: relative;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+.bg-overlay-contacts {
+  background:rgba(255,255,255, .5);
+  height: 855px;
+}
