@@ -1,0 +1,8 @@
+html, body {height: 100%; min-height: 100%}
+body {
+  background: rgba(238, 238, 238, 1);
+}
+p.italic {
+  font-style: italic;
+}
+

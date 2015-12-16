@@ -1,0 +1,43 @@
+<head>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--twitter share button-->
+  <script>
+    window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+   
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+   
+    return t;
+  }(document, "script", "twitter-wjs"));
+  <!--end-->
+  </script>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="text-primary">A Word a day, keeps a demon away.</h1>
+        </div>
+        <div class="col-md-8">
+          <h2 id="yourQuote"></h2>
+          <p id="yourAuth" class="italic"></p>
+                    <button class="btn btn-success btn-lg" type="submit">Click Me to kill that demon</button><br><br>
+                    <a id="share" href="https://twitter.com/share" class="twitter-share-button" data-text="Get your random Word at " data-via="penanote" data-size="large"><span class="fa fa-twitter fa-fw"></span>Tweet Me</a>
+          <!--<button class="btn btn-primary btn-lg" type="submit"><span class="fa fa-twitter fa-fw"></span>Tweet It</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
