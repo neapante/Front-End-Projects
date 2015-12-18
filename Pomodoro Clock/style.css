@@ -1,0 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+
+.time {
+  font-family: 'Rock Salt', cursive;
+  font-size: 72px;
+}
+
+.times {
+  background-color: #000;
+  height: 100vh;
+}
