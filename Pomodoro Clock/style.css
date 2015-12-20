@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Marvel:400,700);
+
+.time {
+  font-family: 'Marvel', cursive;
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+}
+
+.times {
+  background-color: #C53C2F;
+  height: 100vh;
+}
+
+.side {
+  padding-top: 20px;
+}
+
+span {
+  font-weight: bold;
+}

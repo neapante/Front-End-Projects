@@ -41,22 +41,6 @@ function add() {
 }
 function timer() {
     t = setTimeout(add, 1000);
-    /*console.log(t + " " + state);
-   if ( state == "work") {
-      if ( t > 11) {
-            //console.log ("t = 10");
-            state = "rest";
-            h1.textContent = "00:00:00";
-            seconds = 0; minutes = 0; hours = 0;
-            t = 0;
-      }
-   } else if ( state == "rest") {
-     if ( t > 10 ) {
-            state = "work";
-            h1.textContent = "00:00:00";
-            seconds = 0; minutes = 0; hours = 0;
-     }
-   }*/
 }
 //The function below starts the timer on load
 //timer();
