@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+body {
+  background-color: #6496c8;
+}
+
+h1 {
+  font-family: 'VT323', Arial, serif; font-weight: 400;
+  font-size: 60px;
+}
+
+button {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 48px;
+  font-family: 'VT323', Arial, serif; font-weight: 400;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+button:focus {
+  outline: none
+}
+
+section.flat button {
+  color: #fff;
+  background-color: #6496c8;
+  text-shadow: -1px 1px #417cb8;
+  border: none;
+}

@@ -35,6 +35,9 @@ $(document).ready(function() {
   $("#0").click(function() {
     storeValue(0);
   });
+    $("#dot").click(function() {
+    storePoint('.');
+  });
 
   //operation
   $("#add").click(function() {
@@ -111,9 +114,16 @@ function calculate(val) {
 
 function storeValue(number) {
   a.push(number);
-  parsedValue = parseInt(a.join(''), 10);
+  parsedValue = parseFloat(a.join(''), 10);
   console.log(a);
+  console.log(parsedValue);
   $("#result").text(parsedValue);
+}
+
+function storePoint(number) {
+  a.push(number);
+  console.log(a);
+  $("#result").text(a.join(''));
 }
 
 function clearValue() {
